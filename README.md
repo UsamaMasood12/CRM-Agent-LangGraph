@@ -54,26 +54,27 @@ Want to get started immediately? Here's the fastest path:
 This project uses `uv` for dependency management. If you don't have `uv` installed, follow the instructions [here](https://docs.astral.sh/uv/guides/install-python/).
 
 1. **Clone and setup**:
+
    ```bash
    git clone <your-repo-url>
    cd crm-agent
    uv sync  # Install dependencies
    ```
-
 2. **Configure environment**:
+
    ```bash
    cp .env.example .env
    # Edit .env with your OpenAI API key and Supabase URI
    ```
-
 3. **Setup database** (create free Supabase account at [supabase.com](https://supabase.com)):
+
    - Create a new Supabase project. Use the generate_password feature to generate a secure password, copy it into the .env file for use later.
    - Copy the connection string from the Supabase project settings and paste it into the .env file (you'll see a 'connect' button at the top of the dashboard), replacing the placeholder with the actual connection string.
    - Replace the password placeholder with the password you generated earlier.
    - Copy and paste the sql from `db/migration-create-tables.sql` into the Supabase SQL editor. This will automatically create all of the db tables for you.
    - Import each CSV file from the `data` directory into the corresponding table in Supabase.
-
 4. **Verify and run**:
+
    ```bash
    cd frontend && uv run python chat_local.py  # Start chatting with Ralph!
    ```
@@ -109,21 +110,22 @@ What would you like to work on today?
 Try these commands to see Ralph in action:
 
 1. **Customer Analysis**:
+
    ```
    "Show me our top 5 customers by total spending"
    ```
-
 2. **Segment Analysis**:
+
    ```
    "How many customers do we have in each RFM segment?"
    ```
-
 3. **Create a Campaign**:
+
    ```
    "Create a re-engagement campaign for customers who haven't purchased in the last 6 months"
    ```
-
 4. **Send Personalized Emails**:
+
    ```
    "Send a loyalty email to our champion customers thanking them for their business"
    ```
@@ -189,11 +191,3 @@ This is a tutorial project, but contributions are welcome! Please:
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-**Happy Learning! 🚀**
-
-If you found this tutorial helpful, please ⭐ star the repository and subscribe to the [YouTube channel](https://www.youtube.com/@KennethLiao) for more AI tutorials!
