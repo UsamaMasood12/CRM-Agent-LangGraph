@@ -183,6 +183,11 @@ async def your_new_tool(param: str) -> str:
 - [RFM Analysis Guide](https://en.wikipedia.org/wiki/RFM_(market_research))
 - [OpenAI API Documentation](https://platform.openai.com/docs)
 
+## 👥 Contributors
+
+- **Usama Masood** - [UsamaMasood12](https://github.com/UsamaMasood12)
+- **Kenneth Liao** - [kenneth-liao](https://github.com/kenneth-liao)
+
 ## 🤝 Contributing
 
 This is a tutorial project, but contributions are welcome! Please:
